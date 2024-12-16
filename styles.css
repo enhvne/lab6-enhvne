@@ -35,10 +35,13 @@ body {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 100px 10%;
-  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/729ce5c2-d831-436a-8c9d-f38fea0b99b3/web/MN-en-20241209-TRIFECTA-perspective_fe68b511-9996-440f-bc0b-46ee3f9cf682_large.jpg")
-    center/cover no-repeat;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/729ce5c2-d831-436a-8c9d-f38fea0b99b3/web/MN-en-20241209-TRIFECTA-perspective_fe68b511-9996-440f-bc0b-46ee3f9cf682_large.jpg") center/cover no-repeat;
   height: 800px;
 }
 
@@ -51,6 +54,12 @@ body {
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 20px;
+}
+
+.hero-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-form input {
@@ -79,18 +88,19 @@ body {
 .sections h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .sections .row {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: wrap; /* Allows items to wrap when screen is smaller */
+  justify-content: center;
+  gap: 20px; /* Adds spacing between images */
 }
 
 .sections .row img {
   width: 200px;
-  margin-right: 10px;
   border-radius: 5px;
-  flex-shrink: 0;
   transition: transform 0.3s ease, border 0.3s ease;
 }
 
@@ -101,10 +111,14 @@ body {
 .features {
   padding: 50px 10%;
   background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .feature h2 {
